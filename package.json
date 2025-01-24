@@ -1,0 +1,15 @@
+{
+  "name": "parcel-demo-webb",
+  "version": "1.0.0",
+  "author": "Izabel Weatherly",
+  "license": "ISC",
+  "source": "src/index.html",
+  "description": "",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
