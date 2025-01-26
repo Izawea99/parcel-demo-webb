@@ -1,0 +1,186 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#nav-bar {
+    background-color: antiquewhite;
+    margin-bottom: 30px;
+    display: flex; 
+    align-items: center; /* Centrerar logotyp och meny vertikalt */
+    padding: 10px; 
+}
+
+#nav {
+    display: flex; /* Flex för att placera logotyp och meny på samma rad */
+    justify-content: space-between;
+    width: 100%;
+}
+
+#nav img {
+    margin-right: auto; /* Placerar logotypen längst till vänster */
+}
+
+#headmenu {
+    display: flex;
+    justify-content: flex-end; /* Behåller menyn längst till höger */
+    align-items: center; /* Centrerar menyn vertikalt */
+    gap: 15px; /* Skapar mellanrum mellan menyvalen */
+}
+
+nav ul {
+    display: flex; /*Flex för att placera valen på rad*/
+    list-style: none; /*Tar bort punkterna från listan*/
+    margin-right: 20px; /*Skapar utrymme till höger om objekte*/
+    padding: 20px;
+    gap: 5px; /*Skapar mellanrum mellan objekten*/
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none; /*Tar bort så länkarna inte är understrukna*/
+    font-size: 32px; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; /*Gör texten bold*/
+    padding: 10px 15px; /*Skapar utrymma runt texten*/
+    transition: background-color 0.3s ease; /*Skapar en mjukare övergång när muspekaren förs över objektet*/
+}
+
+nav ul li a:hover {
+    color: saddlebrown;
+}
+
+footer {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+#headline p,
+#about-assignment p {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+picture img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+article p {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#pictures p {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Media query för mellanstora skärmar (surfplattor) */
+@media (min-width: 760px) and (max-width: 1080px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    #nav img {
+        max-width: 150px; /* Anpassar logotypstorleken*/
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    picture img {
+        max-width: 70%; /*ställer max bredden på bilderna */
+        height: auto; /*justerar höjden automatiskt för att behålla proporttioner*/
+        margin: 0 auto; /*centrerar i mitten*/
+    }
+}
+
+/* Media query för små skärmar (mobiler) */
+@media (max-width: 760px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    #nav img {
+        max-width: 130px; 
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    picture img {
+        max-width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
