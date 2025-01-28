@@ -123,6 +123,17 @@ article p {
     background-color: black;
 }
 
+main{
+    width: 100%;
+}
+
+#assignment p {
+    text-align: center;
+    width: 70%;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
 
 
 /* Media query för mellanstora skärmar (surfplattor) */
