@@ -28,6 +28,54 @@
     <main>
         <section>
             <h1>Min arbetsprocess</h1>
+            <p>Jag började med att skapa en mapp för uppgiften som jag döpte till "parcel-demo-webb", jag öppnade 
+                sedan mappen i terminalen på datorn där jag sedan skapade ett nytt NPM-projekt genom att skriva in "npm init". Jag 
+                öppnade sedan projektet i Visual Studio Code. Efter de installerade jag parcel genom att skriva "npm install parcel --save-dev"
+                i terminalen. Jag skapade även en ".gitignore"-fil där jag la till att "node_modules" inte skulle versionshanteras. 
+                <br>
+                Därefter skapade jag en katalog i min befintliga mapp som jag döpte till "src", i src-katalogen la jag sedan alla mina arbetsfiler. I src-katalogen
+                skapade jag sedan en index.html-fil, en mapp för min style.css-fil med namnet css och en mapp för min main.js-fil med namnet js. 
+                <br>
+                Jag skapade också en logotyp och favicon till webbplatsen och valde att döpa webbplatsen till Demo hörnan, logotypen skapade jag i illustrator. 
+                Jag skapade en mapp i min src-katalog för mina bilder, där la jag också logotypen och faviconen. 
+                <br>
+                Efter att logotypen var färdig började jag bygga upp strukturen i index.html-filen, med header, nav och sektioner etc. Jag la sedan till en
+                välkomsttext samt text om uppgiften med tillhörande rubriker enligt rangordning. Jag la också till en "footer" med information om vilket moment och 
+                kurs som webbplatsen är skapad för samt copy right. 
+                <br>
+                Jag gick sedan vidare till att strukturera upp bild-sidan och lägga till de bilder jag ville använda mig av. Jag valde att använda mig av bilder 
+                som jag tagit under en resa jag gjorde till Umfors under nyår. Jag la till bilderna genom att använda mig av "picture"-taggen och sedan infoga bilderna 
+                med "srcset" inom picture-taggen, detta för att med hjälp av parcel kunna komprimera och optimera bilderna automatiskt, jag la även till en "fallback" bild 
+                med img-taggen. Jag valde att den första länkade bilden skulle vara i "avif"-format och den andra i webp-format, fallback-bilden var i jpeg-format från orginal. 
+                Jag bestämde att "width" skulle vara 800 pixlar. Jag skrev en text till varje bild med lite kortfattad information om bilderna.
+                <br>
+                Efter detta påbörjade jag skapandet av designen på webbplatsen med css. Jag skapade en enkel design med ett ljust färgtema. Jag bestämde storlek på de olika rubrikerna 
+                och för brödtexten. Jag satte en hover-färg på menyvalen. Jag la till media query regler för skärmar mellan 760 pixlar och 1080 pixlar och för skärmar under 760 pixlar. 
+                Jag förminskade storlekarna på texten för mindre skärmar. Jag justerade också storleken på logotypen för de olika storlekarna. Jag ändrade också storleken på bilderna 
+                efter storleken på skärmen. 
+                <br>
+                Efter att all styling var färdig och jag var nöjd med designen gick jag igenom kursmaterialet ett flertal gånger då jag hade lite svårt att förså exakt vad som skulle automatiseras
+                och hur man skulle kunna göra det. Jag läste på om "targets" i dokumentationen på parceljs.org, jag la därefter till "browserslist" i package.json-filen med attributen att webbplatsen ska stöjas 
+                att användas i webbläsare som används av mer än 25% globalt, att de ska stödja de två senaste versionerna av webbläsaren och att den ska utesluta webbläsare som inte uppdaterats på länge, alltså webbläsare som 
+                är "döda". 
+                <br>
+                Då jag saknade javascript till min webbplats valde jag att skapa en enkel funktion för att visa en utfällbar meny på skärmar under 760 pixlar. Eftersom jag valde att ha en utfällbar meny på 
+                mindre skärm fick jag därför uppdatera både css- och html-filerna. I html skapade jag en "div" där jag la tre tomma "span" för att skapa själva meny-symbolen. Jag gav min meny id "burger-menu", så jag uppdaterade
+                min css på de allmänna reglerna att den inte skulle visas, jag la också till att muspekaren blir en "fingerpekare" istället när den försöver meny-symbolen, jag ställde in storlek och särg samt margin. 
+                Jag ställde sedan in regler för hur den skulle visas för skärmar mindre än 760 pixlar i media query, jag började med att ställa in att #headmenu inte skulle visas då de var den menyn som 
+                skulle visas på större skärmar. Jag satte sedan att texten skulle centreras i mitten för li-elemnten. På #headmenu.show som anropar javascript funktionen satte jag "display: flex;"" med "flex-direction: column;"
+                då jag ville att dom skulle hamna som i en lista i menyn. Jag satte bakgrunsfärgen till samma som färgen på navigerings-menyn. Och sedan "position: absolut;". Då menyn fäldes ut åt höger på sidan istället för att 
+                hamna centrerat på sidan fick jag använda mig av "right: 0;" för att fö den på rätt håll. Jag stötte på problem med att menyn visades för högt upp så att den täckte en del av 
+                logotypen och de löste jag genom att ställa in "top: 60px;". Jag stötte sedan på problem med att menyn inte gick hela vägen ut i höger kanten av någon anledning, jag satt i flera timmar och försökte lösa problemet
+                men hur jag än gjorde så lyckades jag inte lösa de så tillsist bad jag ChatGPT om hjälp och den föreslog att lägga till "left: 0;" och "width: 100vw;", jag testade och med "width: 100vw;" gick menyn istället för 
+                långt ut till höger så jag fick prova mig fram och vid "width: 97vw;" fick jag den att vara ikant med navigerings-"baren". Jag vet inte vad i min kod som påverkat att de blivit 
+                på detta sätt men jag har försökt med så många olika kombinationer och felsökningar för att lösa de utan att lyckas. 
+                <br>
+                Jag har också under min utveckling av webbplatsen haft problem med "live-servern" då den inte uppdaterat ändringarna utan att spara filen. Jag fick ett par gånger följande felmeddelande:
+                "[parcel] conection to the HMR server was lost", jag sökte runt lite och de verkar som att det kan vara någon brandvägg som ligger och spökar så jag ska föröska se om jag kan lösa de problemt. 
+                <br>
+                
+            </p>
         </section>
     </main>
 
