@@ -1,7 +1,7 @@
 body {
-    background-color: whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    margin: 0;
 }
 
 h1 {
@@ -26,6 +26,7 @@ p {
     display: flex; 
     align-items: center; /* Centrerar logotyp och meny vertikalt */
     padding: 10px; 
+    width: 100%;
 }
 
 #nav {
@@ -104,6 +105,25 @@ article p {
     margin: 0 auto;
     padding: 10px;
 }
+  
+
+#burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 15px;
+    gap: 5px;
+}
+  
+#burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+
 
 /* Media query för mellanstora skärmar (surfplattor) */
 @media (min-width: 760px) and (max-width: 1080px) {
@@ -129,7 +149,7 @@ article p {
     }
 
     #nav img {
-        max-width: 150px; /* Anpassar logotypstorleken*/
+        max-width: 170px; /* Anpassar logotypstorleken*/
     }
 
     footer {
@@ -183,4 +203,29 @@ article p {
         height: auto;
         margin: 0 auto;
     }
+
+    #headmenu {
+        display: none;
+    }
+      
+    #headmenu li {
+        text-align: center;
+    }
+
+    #headmenu.show {
+        display: flex;
+        flex-direction: column;
+        background-color: antiquewhite;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        left: 0;
+        width: 97vw;
+    }
+    
+    #burger-menu {
+        display: flex;
+    }
 }
+
+
