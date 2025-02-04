@@ -134,6 +134,43 @@ main{
     margin: 0 auto;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Skapar linjer mellan rader och kolumner */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4; /* Ljus bakgrund för rubriker */
+    cursor: pointer; 
+}
+
+th:hover {
+    background-color: gray;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternativ radfärg */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Ändrar färg vid hovring */
+}
+
+#search {
+    border: 2px solid black;
+    padding: 8px;
+    margin: 0 auto;
+    width: 90%;
+}
+
 
 
 /* Media query för mellanstora skärmar (surfplattor) */
