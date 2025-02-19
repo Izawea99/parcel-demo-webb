@@ -1,3 +1,35 @@
-@import 'variables';
-@import 'mixins';
-@import 'style';
+//Abstracts 
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/variables";
+
+//Bas
+@import "base/reset";
+@import "base/typography";
+
+//Komponenter
+@import "components/buttons";
+@import "components/carousel";
+@import "components/cover";
+@import "components/dropdown";
+
+//Layout
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
+
+// Sidor
+@import "pages/home";
+@import "pages/sass";
+
+//Teman
+@import "themes/dark";
+@import "themes/light";
+@import "themes/theme";
+
+//Vendors
+@import "vendors/bootstrap";
