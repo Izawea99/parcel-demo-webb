@@ -1,35 +1,36 @@
 //Abstracts 
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/placeholders";
-@import "abstracts/variables";
+@use"abstracts/functions";
+@use "abstracts/mixins" as mix;
+@use "abstracts/placeholders";
+@use "abstracts/variables";
 
 //Bas
-@import "base/reset";
-@import "base/typography";
+@use "base/reset";
+@use "base/typography";
 
 //Komponenter
-@import "components/buttons";
-@import "components/carousel";
-@import "components/cover";
-@import "components/dropdown";
+@use "components/buttons";
+@use "components/carousel";
+@use "components/cover";
+@use "components/dropdown";
 
 //Layout
-@import "layout/footer";
-@import "layout/forms";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
-@import "layout/sidebar";
+@use "layout/footer";
+@use "layout/forms";
+@use "layout/grid";
+@use "layout/header";
+@use "layout/images";
+@use "layout/navigation";
+@use "layout/sidebar";
 
 // Sidor
-@import "pages/home";
-@import "pages/sass";
+@use "pages/home";
+@use "pages/sass";
 
 //Teman
-@import "themes/dark";
-@import "themes/light";
-@import "themes/theme";
+@use "themes/dark";
+@use "themes/light";
+@use "themes/theme";
 
 //Vendors
-@import "vendors/bootstrap";
+@use "vendors/bootstrap";

@@ -15,8 +15,9 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                  </div>
-                  <ul id="headmenu">
+                </div>
+                 
+                <ul id="headmenu">
                     <li><a href="index.html">Startsida</a></li>
                     <li><a href="#">Om oss</a></li>
                     <li><a href="#">Kontakt</a></li>
@@ -27,11 +28,23 @@
         </div>
     </header>
     <main>
+        <button id="theme-button">Byt tema</button>
         <section id="headline">
             <h1>Välkommen till min SASS-webbplats</h1>
             <p>Detta är en fiktiv webbplats skapad för moment 3 i kursen DT211G - Frontend-basserad webbutveckling!
                 Syftet med denna webbplats är att lära sig hur SASS kan användas för att hantera CSS.
             </p>
+        </section>
+        <section id="image">
+            <h2>En bild</h2>
+            <p>I uppgiften ingick även att man skulle lägga till två bilder på webbplatsen. Jag valde att ta två bilder från min 
+                resa jag gjorde i julas. Den ena bilden visas på denna sida och den andra på sidan "SASS"
+            </p>
+            <picture>
+                <source srcset="images/berg1.jpeg" type="image/webp">
+                <img src="images/berg1.jpeg" alt="Naturbild av snöiga berg" class="image-id">
+            </picture>
+
         </section>
     </main>
 

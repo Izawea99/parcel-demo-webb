@@ -1,0 +1,25 @@
+//Färger
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-light: #f8f9fa;
+$background-dark: #2c3e50;
+$text-color: #333;
+
+//Textstorlekar
+$text-sizes: (
+  h1: 48px,
+  h2: 40px,
+  h3: 36px,
+  h4: 30px,
+  h5: 24px,
+  h6: 20px,
+  p: 18px
+);
+
+//Typsnitt
+$font-stack: helvetica, sans-serif;
+
+//Skärmstorlekar
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1440px;

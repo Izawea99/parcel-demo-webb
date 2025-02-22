@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as var;
+@use "sass:color";
+
+body.dark {
+  background: var.$background-dark;
+  color: white;
+
+  @if lightness(var.$background-dark) < 50% {
+    color: color.adjust(white, $lightness: 10%);
+  }
+}
+
+  
