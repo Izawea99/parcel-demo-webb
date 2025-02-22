@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo hörnan</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Sass</title>
+    <link rel="stylesheet" href="sass/main.scss">
     <script src="js/main.js" type="module"></script>
 </head>
 <body>
     <header id="nav-bar">
         <div id="nav"> 
-            <img src="images/logo-demo-hornan.png" alt="logotyp">
             <nav>
                 <div id="burger-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                  </div>
-                  <ul id="headmenu">
+                </div>
+                 
+                <ul id="headmenu">
                     <li><a href="index.html">Startsida</a></li>
-                    <li><a href="pictures.html">Bilder</a></li>
-                    <li><a href="assignment.html">Uppgiften</a></li>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Tjänster</a></li>
+                    <li><a href="sass.html">SASS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        <button id="theme-button">Byt tema</button>
         <section id="headline">
-            <h1>Välkommen till Demo hörnan</h1>
-            <p>Detta är en demo webbplats skapad för moment 1 i kursen DT211G - Frontend-basserad webbutveckling!</p>
-        </section>
-        <section id="about-assignment">
-            <h2>Om uppgiften</h2>
-            <p>I denna uppgift ska jag skapa en demo-webbplats med HTML, CSS, JavaScript och bilder, där fokus ligger på att använda Node.js för att automatisera arbetsflödet. 
-                Jag ska implementera verktyget som Parcel för att hantera uppgifter som transpilering och minifiering av kod, optimering av bilder och automatiserad publicering 
-                av webbplatsen. Webbplatsen ska vara responsiv och innehålla tre undersidor: en startsida, en bildsida och en sida som beskriver arbetsprocessen som jag genomför för att lösa uppgiften. 
+            <h1>Välkommen till min SASS-webbplats</h1>
+            <p>Detta är en fiktiv webbplats skapad för moment 3 i kursen DT211G - Frontend-basserad webbutveckling!
+                Syftet med denna webbplats är att lära sig hur SASS kan användas för att hantera CSS.
             </p>
+        </section>
+        <section id="image">
+            <h2>En bild</h2>
+            <p>I uppgiften ingick även att man skulle lägga till två bilder på webbplatsen. Jag valde att ta två bilder från min 
+                resa jag gjorde i julas. Den ena bilden visas på denna sida och den andra på sidan "SASS"
+            </p>
+            <picture>
+                <source srcset="images/berg1.jpeg" type="image/webp">
+                <img src="images/berg1.jpeg" alt="Naturbild av snöiga berg" class="image-id">
+            </picture>
+
         </section>
     </main>
 
     <footer>
-        <p>Webbplats för moment 1 - DT211G (Frontend-baserad webbutveckling) <br>
+        <p>Webbplats för moment 3 - DT211G (Frontend-baserad webbutveckling) <br>
             &copy; Izabel weatherly, 2025</p>
     </footer>
     

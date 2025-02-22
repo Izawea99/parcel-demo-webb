@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as var;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin button-style($color) {
+    background-color: $color;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid var.$primary-color;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken($color, 30%);
+    }
+  }
+  

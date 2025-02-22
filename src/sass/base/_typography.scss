@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *; //Imoprterar variabler
+
+@debug $text-sizes;
+//Loopar igenom textstorlekar och applicerar rätt storlek för rätt rubrik etc
+@each $element, $size in $text-sizes {
+  #{$element} {
+    font-size: $size;
+  }
+}
+
+

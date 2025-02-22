@@ -1,0 +1,13 @@
+@use "../abstracts/placeholders" as *; 
+@use "../abstracts/variables" as var;
+
+footer {
+  @extend %flex-center !optional; 
+  
+  background-color:var.$primary-color;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  font-size: 18px;
+}
+  

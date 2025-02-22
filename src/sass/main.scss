@@ -1,0 +1,36 @@
+//Abstracts 
+@use"abstracts/functions";
+@use "abstracts/mixins" as mix;
+@use "abstracts/placeholders";
+@use "abstracts/variables";
+
+//Bas
+@use "base/reset";
+@use "base/typography";
+
+//Komponenter
+@use "components/buttons";
+@use "components/carousel";
+@use "components/cover";
+@use "components/dropdown";
+
+//Layout
+@use "layout/footer";
+@use "layout/forms";
+@use "layout/grid";
+@use "layout/header";
+@use "layout/images";
+@use "layout/navigation";
+@use "layout/sidebar";
+
+// Sidor
+@use "pages/home";
+@use "pages/sass";
+
+//Teman
+@use "themes/dark";
+@use "themes/light";
+@use "themes/theme";
+
+//Vendors
+@use "vendors/bootstrap";

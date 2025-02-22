@@ -1,0 +1,11 @@
+.image-id{
+    max-width: 90%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .image-id {
+      max-width: 70%; 
+    }
+  }
+  

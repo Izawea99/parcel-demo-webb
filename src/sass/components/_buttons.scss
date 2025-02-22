@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+#theme-button {
+    @include mix.button-style(var.$background-light);
+}

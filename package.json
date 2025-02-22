@@ -10,13 +10,16 @@
     "build": "parcel build"
   },
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@parcel/transformer-sass": "^2.13.3",
+    "eslint": "^9.19.0",
     "parcel": "^2.13.3",
+    "sass": "^1.85.0",
     "sharp": "^0.33.5"
   },
-  
   "browserslist": [
-     "> 0.25%",
-     "last 2 versions",
-     "not dead"
+    "> 0.25%",
+    "last 2 versions",
+    "not dead"
   ]
 }
