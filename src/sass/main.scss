@@ -3,6 +3,7 @@
 @use "abstracts/mixins" as mix;
 @use "abstracts/placeholders";
 @use "abstracts/variables";
+@use "abstracts/keyframes";
 
 //Bas
 @use "base/reset";
@@ -13,6 +14,8 @@
 @use "components/carousel";
 @use "components/cover";
 @use "components/dropdown";
+@use "components/animations";
+@use "components/interactives";
 
 //Layout
 @use "layout/footer";

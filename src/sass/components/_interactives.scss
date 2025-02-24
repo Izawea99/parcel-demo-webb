@@ -1,0 +1,16 @@
+.button {
+    padding: 25px 50px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 0; // Fyrkantig från start
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+
+    &:hover {
+        animation: bounceColor 1.2s ease-in-out infinite;
+    }
+}
+  
