@@ -29,3 +29,5 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem("theme", "light");
   }
 });
+
+import './charts.js';
